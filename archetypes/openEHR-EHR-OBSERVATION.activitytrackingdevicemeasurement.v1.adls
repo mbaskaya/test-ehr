@@ -7,10 +7,10 @@ language
 description
     lifecycle_state = <"unmanaged">
     original_author = <
+        ["date"] = <"2018-03-19">
         ["name"] = <"Mert Baskaya">
         ["organisation"] = <"Middle East Technical University">
         ["email"] = <"baskaya.mert@metu.edu.tr">
-        ["date"] = <"2018-03-19">
     >
     copyright = <"">
     details = <

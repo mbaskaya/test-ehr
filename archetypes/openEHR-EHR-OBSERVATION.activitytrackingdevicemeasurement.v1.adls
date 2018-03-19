@@ -163,7 +163,7 @@ terminology
             ["id9"] = <https://loinc.org/41981-2>
         >
         ["SNOMED-CT"] = <
-            ["id11"] = <246132006>
-            ["id20"] = <248263006>
+            ["id11"] = <https://www.snomed.org/246132006>
+            ["id20"] = <https://www.snomed.org/248263006>
         >
     >

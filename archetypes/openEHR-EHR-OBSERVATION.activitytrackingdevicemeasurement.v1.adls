@@ -21,10 +21,53 @@ definition
                 events matches {
                     EVENT[id3] matches {    -- Any event
                         data matches {
-                            ITEM_TREE[id4] 
-                        }
-                        state matches {
-                            ITEM_TREE[id5] 
+                            ITEM_TREE[id4] matches {
+                                items matches {
+                                    ELEMENT[id7] occurrences matches {1} matches {    -- Steps
+                                        value matches {
+                                            DV_COUNT[id8] matches {
+                                                magnitude matches {|>-1|}
+                                            }
+                                        }
+                                    }
+                                    ELEMENT[id9] occurrences matches {1} matches {    -- Calories
+                                        value matches {
+                                            DV_QUANTITY[id10] matches {
+                                                [units, magnitude, precision] matches {
+                                                    [{"kcal"}, {|>0.0|}, {|>=0|}]
+                                                }
+                                            }
+                                        }
+                                    }
+                                    ELEMENT[id11] occurrences matches {1} matches {    -- Distance
+                                        value matches {
+                                            DV_QUANTITY[id12] matches {
+                                                property matches {[at2]}
+                                                [units, magnitude, precision] matches {
+                                                    [{"km"}, {|>0.0|}, {|>=0|}]
+                                                }
+                                            }
+                                        }
+                                    }
+                                    ELEMENT[id20] occurrences matches {1} matches {    -- Sleep
+                                        value matches {
+                                            DV_QUANTITY[id21] matches {
+                                                property matches {[at8]}
+                                                [units, magnitude, precision] matches {
+                                                    [{"min"}, {|>0.0..<1440.0|}, {|>=0|}]
+                                                }
+                                            }
+                                        }
+                                    }
+                                    ELEMENT[id22] occurrences matches {0..1} matches {    -- Daily Activity Level
+                                        value matches {
+                                            DV_CODED_TEXT[id23] matches {
+                                                defining_code matches {[ac2]}
+                                            }
+                                        }
+                                    }
+                                }
+                            }
                         }
                     }
                 }
@@ -43,5 +86,78 @@ terminology
                 text = <"Any event">
                 description = <"Any event">
             >
+            ["id7"] = <
+                text = <"Steps">
+                description = <"Steps taken in a day">
+            >
+            ["id9"] = <
+                text = <"Calories">
+                description = <"Calories burned in a day">
+            >
+            ["at1"] = <
+                text = <"Energy">
+                description = <"Energy">
+            >
+            ["id11"] = <
+                text = <"Distance">
+                description = <"Distance passed in a day">
+            >
+            ["at2"] = <
+                text = <"Length">
+                description = <"Length">
+            >
+            ["at3"] = <
+                text = <"sedentary">
+                description = <"sedentary activity in a day">
+            >
+            ["ac1"] = <
+                text = <"SNOMED-CT">
+                description = <"SNOMED-CT">
+            >
+            ["at4"] = <
+                text = <"sedentary">
+                description = <"sedentary activity level">
+            >
+            ["at5"] = <
+                text = <"lightly active">
+                description = <"lightly active activity level">
+            >
+            ["at6"] = <
+                text = <"moderately active">
+                description = <"moderately active activity level">
+            >
+            ["at7"] = <
+                text = <"active">
+                description = <"active activity level">
+            >
+            ["ac2"] = <
+                text = <"activity level">
+                description = <"value set describing daily activity level">
+            >
+            ["id20"] = <
+                text = <"Sleep">
+                description = <"sleep duration in a day">
+            >
+            ["at8"] = <
+                text = <"Time">
+                description = <"Time">
+            >
+            ["id22"] = <
+                text = <"Daily Activity Level">
+                description = <"coded activity level in a day">
+            >
+            ["ac3"] = <
+                text = <"LOINC">
+                description = <"LOINC">
+            >
         >
+    >
+    term_bindings = <
+        ["openehr"] = <
+            ["at1"] = <http://openehr.org/id/121>
+            ["at2"] = <http://openehr.org/id/122>
+            ["at8"] = <http://openehr.org/id/128>
+        >
+        ["LOINC"] = <>
+        ["SNOMED-CT"] = <>
     >

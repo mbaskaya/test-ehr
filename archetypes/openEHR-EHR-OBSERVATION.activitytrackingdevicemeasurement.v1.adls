@@ -158,6 +158,8 @@ terminology
             ["at2"] = <http://openehr.org/id/122>
             ["at8"] = <http://openehr.org/id/128>
         >
-        ["LOINC"] = <>
+        ["LOINC"] = <
+            ["id7"] = <https://loinc.org/55423-8>
+        >
         ["SNOMED-CT"] = <>
     >

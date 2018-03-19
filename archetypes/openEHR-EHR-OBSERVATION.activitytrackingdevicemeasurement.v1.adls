@@ -23,7 +23,7 @@ definition
                         data matches {
                             ITEM_TREE[id4] matches {
                                 items matches {
-                                    ELEMENT[id7] occurrences matches {1} matches {    -- Steps
+                                    ELEMENT[id7] occurrences matches {0..1} matches {    -- Steps
                                         value matches {
                                             DV_COUNT[id8] matches {
                                                 magnitude matches {|>-1|}

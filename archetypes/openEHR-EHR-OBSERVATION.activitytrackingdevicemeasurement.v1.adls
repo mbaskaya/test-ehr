@@ -106,10 +106,6 @@ terminology
                 text = <"Length">
                 description = <"Length">
             >
-            ["at3"] = <
-                text = <"sedentary">
-                description = <"sedentary activity in a day">
-            >
             ["ac1"] = <
                 text = <"SNOMED-CT">
                 description = <"SNOMED-CT">

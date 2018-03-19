@@ -160,6 +160,10 @@ terminology
         >
         ["LOINC"] = <
             ["id7"] = <https://loinc.org/55423-8>
+            ["id9"] = <https://loinc.org/41981-2>
         >
-        ["SNOMED-CT"] = <>
+        ["SNOMED-CT"] = <
+            ["id11"] = <246132006>
+            ["id20"] = <248263006>
+        >
     >
